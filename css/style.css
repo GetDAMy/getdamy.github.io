@@ -1,0 +1,955 @@
+/* --------------------------------------------- */
+/* FONTS                                         */
+/* --------------------------------------------- */
+
+@font-face {
+  font-family: 'Arial';
+  src: url('fonts/Arial.eot?#iefix') format('embedded-opentype'),  url('fonts/Arial.otf')  format('opentype'),
+	     url('fonts/Arial.woff') format('woff'), url('fonts/Arial.ttf')  format('truetype'), url('fonts/Arial.svg#Arial') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/MyriadPro-Regular.otf')  format('opentype'),
+	     url('fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf')  format('truetype'), url('fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;  
+}
+
+
+/* --------------------------------------------- */
+/* GENERAL RULES                                 */
+/* --------------------------------------------- */
+
+
+
+
+body{
+  
+  font-family: 'Arial';
+  font-size:18px;
+  color:#fff;
+  overflow-y:hidden; 
+  background-image:url("../images/background2.jpg") !important;
+}
+
+h1{
+  font-family: 'Arial';
+  font-size:30px;
+  line-height:43px;
+  margin-bottom:15px;
+  font-weight:200;
+}
+
+h2{
+  font-family: 'Arial';
+  font-size:24px;
+  line-height:36px;
+}
+
+p{
+  font-size:17px;
+  color:#fff;
+  line-height:27px;
+
+}
+
+ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+li{
+  font-size:17px;
+  color:#fff;
+  line-height:29px;
+}
+.relative{
+  position:relative;
+}
+
+.centered-phone{
+  text-align:center;
+  z-index:100;
+}
+
+.centered-phone img{
+  z-index:100;
+}
+
+.phone-screen, .phone-screen2, .phone-screen3{
+  left: 119px;
+  position: absolute;
+  top: 81px;
+  z-index: 80 !important;
+}
+
+.carausel-area{
+  position:relative;
+}
+
+
+.screen-area{
+  position:relative;
+}
+
+
+/* --------------------------------------------- */
+/* HEADER AREA                                   */
+/* --------------------------------------------- */
+
+#header{
+  padding:7px 0px 28px 69px;
+  z-index:100;
+  width: 100%;
+  height: 72px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 6;
+
+}
+
+.container-header{
+    width:100%;
+    position:relative;
+}
+
+.header-left{
+  width:48.9%;
+  float:left;
+  margin-left:1%;
+}
+
+.header-right{
+  width:48.9%;
+  float:left;
+  margin-right:1%;
+}
+
+.container-header:after{
+    visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+
+
+#header span{   
+  margin-right:16px;
+  font-size:13px;
+  margin-top:5px;
+}
+
+.dl{
+  width:182px;
+  height:53px;
+  display:block;
+  text-indent:-9999px;
+  float:right;
+}
+
+.dlapps{
+  background:url('images/download.png') no-repeat;
+}
+
+/* --------------------------------------------- */
+/* SECTION #1                                    */
+/* --------------------------------------------- */
+
+#section1{
+  padding:195px 0px 0px 0px; 
+  margin:0px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+}
+/*.text-box1{
+	background:rgba(107, 105, 105, 0.5);
+	padding:10px;
+}
+/* --------------------------------------------- */
+/* FOOTER                                        */
+/* --------------------------------------------- */
+
+#footer{
+    
+   font-size:12px;
+   /*padding-bottom:30px;*/
+   padding-bottom:0px;
+   padding-top:10px;
+   width: 100%;
+   height: 30px;
+   bottom: 0;
+   left: 0;
+   position: fixed;
+   z-index: 100;
+}
+
+#footer a:link,#footer a:active,#footer a:visited{
+  color:#fff;
+  text-decoration:none;
+}
+
+#footer a:hover{
+  color:#fff;
+  text-decoration:underline;
+}
+
+.footer-left{
+  text-align:left;
+}
+  
+.footer-right{
+  text-align:right;
+}
+
+.footer-container{
+    width:100%;
+    position:relative;
+}
+
+.footer-left{
+  width:48.9%;
+  float:left;
+  margin-left:1%;
+}
+
+.footer-right{
+  width:48.9%;
+  float:left;
+  margin-right:1%;
+  text-align:right;
+}
+
+
+
+
+/* --------------------------------------------- */
+/* PHONE                                         */
+/* --------------------------------------------- */
+
+#phone{
+  text-align:center;
+
+}
+
+.centered-iphone{
+   padding-bottom:30px;
+   /*width: 100%;*/
+   height: 30px;
+   /*top: 132px;*/
+   top:90px;
+	/*left:40px;*/
+	left:18px;
+   position: absolute;
+   z-index: 6;
+}
+
+
+
+/* --------------------------------------------- */
+/* CARROUSEL                                     */
+/* --------------------------------------------- */
+
+.bx-wrapper .bx-viewport {
+   /*
+   background: none;
+    border: none !important;
+    box-shadow: none !important;
+    left: 0px !important;
+    transform: translateZ(0px);
+	height:386px !important;
+	width:216px !important;
+	*/
+	border: medium none !important;
+    box-shadow: none !important;
+    height: 414px !important;
+    left: -67px !important;
+    top: -10px;
+    transform: translateZ(0px);
+    width: 235px !important;
+}
+
+
+
+.bx-pager {
+  bottom: 0px !important; 
+  display:none !important; 
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: url('images/slider-list.png') no-repeat 0px -9px !important;
+  text-indent: -9999px;
+  display: block;
+  width: 9px !important;
+  height: 9px !important;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active { 
+  background: url('images/slider-list.png') no-repeat 0px 0px !important;
+}
+
+
+
+.bx-wrapper img {
+    display: block;
+    height: 414px !important;
+    width:235px !important;
+    
+}
+
+
+.scrpos{
+  position:absolute;
+}
+
+
+ ul.bxslider1{
+  height:538px;
+}
+
+.bxslider1 li{
+  /*height:538px;*/
+  width:216px !important;
+ 
+}
+
+.screen-phone{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:216px;
+  height:386px;
+  overflow:hidden;
+}
+
+.screen-phone img{
+  position:absolute;
+  
+  left:0px;
+  z-index:35;
+}
+
+
+/* --------------------------------------------- */
+/* RESPONSIVE                                    */
+/* --------------------------------------------- */
+
+
+
+/* CSS FOR SAFARI ONLY*/
+
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+	.box-adj{
+		position:relative;
+		top:-230px;
+	}
+	
+	.box-adj2{
+		position:relative;
+		top:-100px;
+	}
+	
+	_::-moz-svg-foreign-content, :root .box-adj {
+		position:relative;
+		top:-230px;
+	}
+	
+	
+}
+
+@media only screen and (min-width : 1368px) {
+	.box-adj{
+		position:relative;
+		top:-230px;
+	}
+	
+	.box-adj2{
+		position:relative;
+		top:-100px;
+	}
+	
+	_::-moz-svg-foreign-content, :root .box-adj {
+		position:relative;
+		top:-230px;
+	}
+	
+}
+
+@media (min-width: 1200px) {
+   
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+   .section-share {
+		left: -30px;
+		margin-left: 0;
+		position: absolute;
+		text-align: right;
+		top: 230px;
+		width: 100%;
+}
+
+
+.text-box1 {
+    left: 66px;
+    position: absolute;
+    top: 100px;
+    width: 289px;
+}
+.buttons-holder{float:none;margin:0 auto;}
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+         /* ---------- BODY ----------------- */
+
+   body{
+      height:auto;
+      background:#E67E22;
+	  overflow-y: auto;
+   }
+
+  /* ---------- HEADER ----------------- */
+  #header{
+      position:relative;
+	  height:70px !important;
+  }
+
+.menu_right{text-align:center;}
+.menu_right ul li{display:inline-block;padding:10px;}
+.menu_right ul li a{color:#fff;}
+  .logo{
+    text-align:center;
+  }
+
+  .dowloadapps{
+    margin-top:25px;
+
+  }
+
+  .dl{
+    float:none;
+    margin: 0 auto;
+  }
+
+  .commingsoon{
+    text-align:center;
+  }
+
+  .no-pos-right{
+    float:none;
+    margin-left:10px;
+  }
+
+
+  /* ---------- SECTION #1 ------------- */
+
+  #section1{
+    padding:0px !important;
+    text-align:center;
+    position:relative;
+  }
+
+  #section1 p{
+    margin-bottom:40px;
+  }
+
+  .section-share {
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  .section-share ul{
+      text-align:center;
+      margin-top:10px;
+      margin-bottom:25px;
+  }
+
+  .share-mobile{
+      position:relative;
+  }
+
+  .share-mobile li{
+      display:inline-block;
+     float:none;
+  }
+  
+  
+  
+.text-box1{
+	left: 0;
+    margin-top: 60px;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+  .buttons-holder{float:none;margin:0 auto;}
+ 
+  .section-share{
+	left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+	margin-top:70px;
+}
+
+
+.bx-wrapper .bx-viewport {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none !important;
+    box-shadow: none !important;
+    height: 386px !important;
+    left: -67px !important;
+    top: -14px;
+    transform: translateZ(0px);
+    width: 216px !important;
+}
+
+.bx-wrapper img {
+    display: block;
+    height: 386px !important;
+    width: 216px !important;
+}
+
+.box-adj2 {
+    position: relative;
+    top: 0;
+}
+  /* ---------- FOOTER ----------------- */
+
+  #footer{
+      background:#E67E22;
+      position:relative;
+      height:auto;
+      padding:15px 0px;
+      margin:0px;
+  }
+
+
+  .footer-left{
+      text-align:center;
+	  float: left;
+	  margin-left: 0;
+     width: 100%;
+  }
+
+  .footer-right{
+      text-align:center;
+	  float: left;
+      margin-left: 0;
+      width: 100%;
+  }
+
+   /* ---------- CARROUSEL ----------------- */
+
+  .phone-block-area{
+      display:block;
+      width:320px;
+      height:536px;
+      margin:0px auto;
+      position:relative;
+  }
+
+  .small-screen .bx-wrapper .bx-viewport {
+    left:15px !important;
+  }
+  .slider2 .bx-wrapper .bx-viewport{
+      height:386px !important;
+  }
+
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+     /* ---------- BODY ----------------- */
+
+   body{
+      height:auto;
+	  overflow-y: auto;
+   }
+
+  /* ---------- HEADER ----------------- */
+  #header{
+      position:relative;
+	  height:70px !important;
+  }
+
+.menu_right{text-align:center;}
+.menu_right ul li{display:inline-block;padding:10px;}
+.menu_right ul li a{color:#fff;}
+  .logo{
+    text-align:center;
+  }
+
+  .dowloadapps{
+    margin-top:25px;
+
+  }
+
+  .dl{
+    float:none;
+    margin: 0 auto;
+  }
+
+  .commingsoon{
+    text-align:center;
+  }
+
+  .no-pos-right{
+    float:none;
+    margin-left:10px;
+  }
+
+
+  /* ---------- SECTION #1 ------------- */
+
+  #section1{
+    padding:0px !important;
+    text-align:center;
+    position:relative;
+  }
+
+  #section1 p{
+    margin-bottom:40px;
+  }
+
+  .section-share {
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  .section-share ul{
+      text-align:center;
+      margin-top:10px;
+      margin-bottom:25px;
+  }
+
+
+  .share-mobile{
+      position:relative;
+  }
+  
+  .share-mobile li{
+      display:inline-block;
+     float:none;
+  }
+
+.text-box1{
+	left: 0;
+    margin-top: 60px;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+  .buttons-holder{float:none;margin:0 auto;}
+ 
+  .section-share{
+	left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+	margin-top:70px;
+}
+
+
+.bx-wrapper .bx-viewport {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none !important;
+    box-shadow: none !important;
+    height: 386px !important;
+    left: -67px !important;
+    top: -14px;
+    transform: translateZ(0px);
+    width: 216px !important;
+}
+
+.bx-wrapper img {
+    display: block;
+    height: 386px !important;
+    width: 216px !important;
+}
+
+.box-adj2 {
+    position: relative;
+    top: 0;
+}
+  /* ---------- FOOTER ----------------- */
+
+  #footer{
+      background:#E67E22;
+      position:relative;
+      height:auto;
+      padding:15px 0px;
+      margin:0px;
+  }
+
+
+ .footer-left{
+      text-align:center;
+	  float: left;
+	  margin-left: 0;
+     width: 100%;
+  }
+
+  .footer-right{
+      text-align:center;
+	  float: left;
+      margin-left: 0;
+      width: 100%;
+  }
+
+  /* ---------- CARROUSEL ----------------- */
+  .small-screen .bx-wrapper .bx-viewport {
+    left:15px !important;
+  }
+
+
+  .small-screen2 .bx-wrapper .bx-viewport {
+    left:15px !important;
+  }
+
+
+   /* ---------- CARROUSEL ----------------- */
+
+  .phone-block-area{
+      display:block;
+      width:320px;
+      height:536px;
+      margin:0px auto;
+      position:relative;
+  }
+
+  .small-screen .bx-wrapper .bx-viewport {
+    left:15px !important;
+  }
+  .slider2 .bx-wrapper .bx-viewport{
+      height:386px !important;
+  }
+
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+   /* ---------- BODY ----------------- */
+
+   body{
+      height:auto;
+      background:#E67E22;
+	  overflow-y: auto;
+   }
+
+  /* ---------- HEADER ----------------- */
+  #header{
+      position:relative;
+	  height:70px !important;
+  }
+.menu_right{text-align:center;}
+.menu_right ul li{display:inline-block;padding:10px;}
+.menu_right ul li a{color:#fff;}
+  .logo{
+    text-align:center;
+  }
+
+  .dowloadapps{
+    margin-top:25px;
+
+  }
+
+  .dl{
+    float:none;
+    margin: 0 auto;
+  }
+
+  .commingsoon{
+    text-align:center;
+  }
+
+  .no-pos-right{
+    float:none;
+    margin-left:10px;
+  }
+
+
+  /* ---------- SECTION #1 ------------- */
+
+  #section1{
+    padding:0px !important;
+    text-align:center;
+    position:relative;
+  }
+
+  #section1 p{
+    margin-bottom:40px;
+  }
+
+  .section-share {
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  .section-share ul{
+      text-align:center;
+      margin-top:10px;
+      margin-bottom:25px;
+  }
+
+
+  .share-mobile{
+      position:relative;
+  }
+  
+  .share-mobile li{
+      display:inline-block;
+     float:none;
+  }
+  
+  .text-box1{
+	left: 0;
+    margin-top: 60px;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+  .buttons-holder{float:none;margin:0 auto;}
+  .centered-phone img {
+    width: 320px;
+    z-index: 100;
+	
+}
+.bx-wrapper img{
+	width:100%;
+	height:auto;
+}
+
+
+.section-share{
+	left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+	margin-top:70px;
+}
+
+
+.phone-screen, .phone-screen2, .phone-screen3 {
+    left: 52px;
+    position: absolute;
+    top: 67px;
+    z-index: 80 !important;
+}
+
+.bx-wrapper .bx-viewport {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none !important;
+    box-shadow: none !important;
+    height: 386px !important;
+    left: 0px !important;
+    top: 0px;
+    transform: translateZ(0px);
+    width: 216px !important;
+}
+
+.bx-wrapper img {
+    display: block;
+    height: 386px !important;
+    width: 216px !important;
+}
+
+
+.box-adj2 {
+    position: relative;
+    top: 0;
+}
+  /* ---------- FOOTER ----------------- */
+
+  #footer{
+      background:#E67E22;
+      position:relative;
+      height:auto;
+      padding:15px 0px;
+      margin:0px;
+  }
+
+
+  .footer-left{
+      text-align:center;
+	  float: left;
+	  margin-left: 0;
+     width: 100%;
+  }
+
+  .footer-right{
+      text-align:center;
+	  float: left;
+      margin-left: 0;
+      width: 100%;
+  }
+
+  /* ---------- CARROUSEL ----------------- */
+
+  .phone-block-area{
+      display:block;
+      width:320px;
+      height:536px;
+      margin:0px auto;
+      position:relative;
+  }
+
+  .small-screen .bx-wrapper .bx-viewport {
+    left:15px !important;
+  }
+  .slider2 .bx-wrapper .bx-viewport{
+      height:386px !important;
+  }
+
+}
+.b-button{
+	width:240px;
+	border:none;
+	background:rgb(0, 166, 156);
+	border-radius:6px;
+	margin-top:20px;
+	line-height:80px;
+	text-align:center;
+	transition:all 0.5s ease;
+	
+}
+.b-button:hover{
+	background:#F99933;
+}
+.buttons-holder{
+	width:240px;
+}
+.header-right #menu-top{float:right;margin-right:30px;}
+.header-right #menu-top li{
+	float:left;
+	padding:10px;
+}
+.header-right #menu-top li a{color:#fff;}
